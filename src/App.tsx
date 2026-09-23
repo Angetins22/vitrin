@@ -18,7 +18,7 @@ export function App() {
         <Route path='/login' element={<Login />}/>
       </Routes>
       </div>
-      <Footer/>
+      {location.pathname !== '/login' && < Footer />}
     </div>
     </>
   )

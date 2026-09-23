@@ -1,12 +1,11 @@
+import { ListaProdutos } from '@/components/ListaProdutos'
+import { PreviewCatalogo} from '@/components/PreviewCatalogo'
 
-const Home: React.FC = () => {
-
-    return (
-        <>
-            <h1 className="text-2xl font-bold mb-4"> TESTE HOME</h1>
-
-        </>
-    )
+export default function Home() {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full">
+      <ListaProdutos />
+      <PreviewCatalogo />
+    </div>
+  )
 }
-
-export default Home
